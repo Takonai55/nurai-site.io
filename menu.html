@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тапсырыс беру | Nurai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header>
+            <div class="container">
+                <h1>Қош келдіңіз Nurai мейрамханасына</h1>
+                <p>Шынайы люкс атмосферасында ерекше тағамдар.</p>
+                <!-- Навигация (Меню, Брондау, Пікірлер, Байланыс) -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Басты бет</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="reserve.html">Брондау</a></li>
+                        <li><a href="reviews.html">Пікірлер</a></li>
+                        <li><a href="contact.html">Байланыс</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+
+    <section class="order">
+        <h2>Тапсырыс беру формасы</h2>
+        <form id="orderForm">
+            <label for="name">Аты-жөніңіз:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон нөмірі:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dish">Тағамды таңдаңыз:</label>
+            <select id="dish" name="dish">
+                <option value="palau">Палау - 2000₸</option>
+                <option value="beshbarmak">Бешбармақ - 2500₸</option>
+                <option value="quyrdaq">Қуырдақ - 2300₸</option>
+                <option value="shashlik">Шашлык - 1000₸</option>
+                <option value="lagman">Лагман уйгурски - 1600₸</option>
+                <option value="taco">Тако - 3500₸</option>
+                <option value="chai">Чай - 1500₸</option>
+                <option value="kumys">Кумыс - 2100₸</option>
+                <option value="praga">Прага - 1700₸</option>
+            </select>
+
+            <label for="quantity">Мөлшер:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <button type="submit">Тапсырыс беру</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nurai. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
